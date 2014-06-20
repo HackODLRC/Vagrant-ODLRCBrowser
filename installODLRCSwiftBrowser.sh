@@ -15,8 +15,12 @@ echo "Done!"
 echo "Installing virtualenv..."
 sudo pip install virtualenv 
 echo "Done!"
+
+virtualenv swiftbrowser-virtualenv
+cd swiftbrowser-virtualenv
+source bin/activate
 echo "Making a virtualenv and installing ODLRC-SwiftBrowser..."
-git clone git://github.com/bkawula/django-swiftbrowser.git
+git clone https://github.com/HackODLRC/django-swiftbrowser.git
 cd django-swiftbrowser
-sudo python setup.py install
+python setup.py install
 echo "Done!"
