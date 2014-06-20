@@ -22,5 +22,6 @@ source bin/activate
 echo "Making a virtualenv and installing ODLRC-SwiftBrowser..."
 git clone https://github.com/HackODLRC/django-swiftbrowser.git
 cd django-swiftbrowser
+pip install dnspython
 python setup.py install
 echo "Done!"
